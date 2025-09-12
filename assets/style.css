@@ -2,15 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
 }
 
+html {
+    font-size: 16px;
+}
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #f0f2f5;
     padding: 1rem;
 }
 
@@ -21,47 +25,97 @@ body {
     max-width: 420px;
     height: 90vh;
     max-height: 750px;
-    background-color: #000000;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 2px 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 1.5rem;
     flex: 2;
     justify-content: center;
-    background-color: rgb(12, 53, 12);
 }
 
 main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 1.5rem;
     flex: 5; 
-    background-color: rgb(73, 59, 37);
+    gap: 3rem;
+    padding-top: 0;
+    overflow: hidden;
 }
+
 .email{
     width: 100%;
     height: 3rem;
+    padding: 1rem;
     font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 2rem;  
 }
 
 .senha{
     width: 100%;
     height: 3rem;
+    padding: 1rem;
     font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
 }
+
 
 .esqueci {
     width: 100%;
+    text-align: right;
     font-size: 0.9rem;
+    color: #000000;
 }
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 1.5rem;
     flex: 3;
-    background-color: rgb(63, 35, 35);
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.proximo {
+    width: 100%;
+    height: 3.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.proximo:hover {
+    background-color: #e65c00;
+}
+
+@media (min-width: 768px) {
+    
+    html {
+        font-size: 17px;
+    }
+
+    .container {
+        max-width: 480px;
+    }
 }
