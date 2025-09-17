@@ -11,5 +11,5 @@
 </div>
 
 ## Time
-| [<img loading= "lazy" src = "https://avatars.githubusercontent.com/u/216623994?s=400&u=1c8a45563dc848f18eecbfeddc458fe0ecea6d47&v=4" width = 150><br><sub> Vitor Oliva Coelho<sub/>](https://github.com/vitorolivacoelho) |
-| :--: |
+| <a href="https://github.com/vitorolivacoelho"> <img loading="lazy" src="https://avatars.githubusercontent.com/u/216623994?s=400&u=1c8a45563dc848f18eecbfeddc458fe0ecea6d47&v=4" width="150"><br> <sub> Vitor Oliva Coelho </sub> </a> | <a href="https://github.com/Anthonypinheiro"> <img loading="lazy" src="https://avatars.githubusercontent.com/u/154991295?v=4" width="150"><br> <sub> Antonio Carlos de Freitas </sub> </a> | <a href="https://github.com/Kaua846"> <img loading="lazy" src="https://avatars.githubusercontent.com/u/179136960?v=4" width="150"><br> <sub> Kaua Lucas Ferreira de Moura </sub> </a> | <a href="https://github.com/raphaelmferraz"> <img loading="lazy" src="https://avatars.githubusercontent.com/u/216451450?v=4" width="150"><br> <sub> Raphael Monte Ferraz </sub> </a> |
+| :---: | :---: | :---: | :---: |
