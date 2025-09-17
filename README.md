@@ -11,4 +11,5 @@
 </div>
 
 ## Time
-[<img loading= "lazy" src = "https://avatars.githubusercontent.com/u/216623994?s=400&u=1c8a45563dc848f18eecbfeddc458fe0ecea6d47&v=4" width = 150><br><sub> Vitor Oliva Coelho<sub/>](https://github.com/vitorolivacoelho)
+| [<img loading= "lazy" src = "https://avatars.githubusercontent.com/u/216623994?s=400&u=1c8a45563dc848f18eecbfeddc458fe0ecea6d47&v=4" width = 150><br><sub> Vitor Oliva Coelho<sub/>](https://github.com/vitorolivacoelho) |
+| :--: |
