@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #E04300;
+    height: 35vh;
+}
+.funcionario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87%;
+    background-color: blue;
+    flex: 4;
+}
+.informacoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blueviolet;
+    height: 100%;
+    flex: 7;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: slateblue;
+    flex: 3;
+}
+.profile-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.caminho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    flex: 6;
+    background-color: violet;
+}
+.superior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 5;
+    background-color: burlywood;
+    gap: 5rem;
+}
+img{
+    width: 70px;
+}
+.chegada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #9A10BD;
+    border-radius: 5rem;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #ffffff;
+    border-radius: 5rem;
+}
+.check{
+    width: 130px;
+}
+
+.inferior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 5;
+    background-color: cadetblue;
+    gap: 5rem;
+}
+.recompensa{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 6;
+    background-color: sandybrown;
+    min-height: 0;
+}
+.cabeca{
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    flex: 0.2rem;
+    width: 100%;
+    background-color: brown;
+}
+.text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+    margin-left: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+.principal {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 2.8rem;
+    flex: 9.2;
+    background-color: aqua;
+    overflow-y: auto; 
+    padding: 2rem 0;
+}
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 3.4rem;
+    background-color: #E04300;
+    border-radius: 1rem;
+    border: 1px solid #000000;
+    flex-shrink: 0;
+}
