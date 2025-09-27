@@ -175,4 +175,83 @@ main{
     border-radius: 1rem;
     border: 1px solid #000000;
     flex-shrink: 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+.objetivo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-color: cornsilk;
+    overflow: hidden;
+}
+.alvo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    background-color: darkblue;
+}
+.xp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(0, 139, 42);
+    overflow: hidden;
+}
+.experiencia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    background-color: palevioletred;
+}
+.pontos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    background-color:silver;
+}
+
+
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(94, 81, 33);
+}
+.contagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 85%;
+    background-color: royalblue;
+}
+.porcentagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    background-color: olive;
+}
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    background-color: white;
+    border-radius: 2rem;
 }
