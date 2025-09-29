@@ -1,257 +1,356 @@
-*{
+* {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
     font-family: "DM Sans", sans-serif;
     font-size: 17px;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    background-color: white;
-}
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+
+/* RESET E BASE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
 }
 
-header{
+body {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* HEADER */
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     background-color: #E04300;
-    height: 35vh;
+    padding: 2rem 1rem;
+    color: white;
 }
-.funcionario{
+
+/* FUNCIONÁRIO */
+.funcionario {
+    display: flex;
+    justify-content: space-between;
+    /* profile-pic à direita */
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    /* ocupa espaço restante */
+    min-width: 0;
+    /* evita overflow */
+}
+
+.informacoes h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.informacoes p {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Profile Pic sempre à direita */
+.profile-pic {
+    flex-shrink: 0;
+    /* não encolhe */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 87%;
-    background-color: blue;
-    flex: 4;
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #333;
 }
-.informacoes{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: blueviolet;
+
+/* CAMINHO */
+.caminho {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 180px;
+    margin-top: 2rem;
+}
+
+.trilha-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    flex: 7;
-}
-.foto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: slateblue;
-    flex: 3;
-}
-.profile-pic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: white;
-    border-radius: 5rem;
+    pointer-events: none;
+    z-index: 0;
 }
 
-.caminho{
+.circle {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    /* centraliza o círculo no ponto */
+}
+
+.circle.inicio {
+    background: #4CAF50;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.circle.chegada {
+    background: #9A10BD;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.circle.recompensa {
     flex-direction: column;
-    width: 95%;
-    flex: 6;
-    background-color: violet;
-}
-.superior{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex: 5;
-    background-color: burlywood;
-    gap: 5rem;
-}
-img{
-    width: 70px;
-}
-.chegada{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: #9A10BD;
-    border-radius: 5rem;
-}
-.inicio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: #ffffff;
-    border-radius: 5rem;
-}
-.check{
-    width: 130px;
+    font-size: 1rem;
 }
 
-.inferior{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex: 5;
-    background-color: cadetblue;
-    gap: 5rem;
-}
-.recompensa{    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 4rem;
-    height: 4rem;
-    background-color: white;
-    border-radius: 5rem;
+.circle.pontos {
+    border: 2px solid #000;
 }
 
-
-main{
+/* MAIN */
+main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    flex: 6;
-    background-color: sandybrown;
-    min-height: 0;
+    padding: 2rem 1rem;
 }
-.cabeca{
+
+.cabeca {
     display: flex;
-    justify-content: left;
-    align-items: end;
-    flex: 0.2rem;
-    width: 100%;
-    background-color: brown;
-}
-.text{
-    display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: chartreuse;
-    margin-left: 0.6rem;
-    margin-bottom: 0.6rem;
 }
+
+.cabeca h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.setas {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.setas i {
+    cursor: pointer;
+}
+
+.linha {
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 1rem 0;
+}
+
+/* CAIXAS */
 .principal {
     display: flex;
-    align-items: center;
-    width: 100%;
     flex-direction: column;
-    gap: 2.8rem;
-    flex: 9.2;
-    background-color: aqua;
-    overflow-y: auto; 
-    padding: 2rem 0;
+    gap: 1rem;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 .caixas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-    height: 3.4rem;
-    background-color: #E04300;
+    background: #E04300;
+    color: white;
     border-radius: 1rem;
-    border: 1px solid #000000;
-    flex-shrink: 0;
+    padding: 1rem;
+    display: flex;
     flex-direction: column;
-    overflow: hidden;
-}
-.objetivo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-    background-color: cornsilk;
-    overflow: hidden;
-}
-.alvo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    height: 100%;
-    background-color: darkblue;
-}
-.xp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 100%;
-    background-color: rgb(0, 139, 42);
-    overflow: hidden;
-}
-.experiencia{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 30%;
-    background-color: palevioletred;
-}
-.pontos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 70%;
-    background-color:silver;
+    gap: 0.5rem;
 }
 
+.objetivo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.status{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-    background-color: rgb(94, 81, 33);
+.objetivo p {
+    flex: 1;
+    line-height: 1.3rem;
 }
-.contagem{
+
+.objetivo .xp {
+    font-weight: bold;
+}
+
+/* STATUS */
+.status {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 0.5rem;
+}
+
+.barra {
+    flex: 1;
+    height: 12px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progresso {
     height: 100%;
-    width: 85%;
-    background-color: royalblue;
+    background: #4CAF50;
+    border-radius: 20px;
 }
-.porcentagem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 15%;
-    background-color: olive;
+
+.status p {
+    min-width: 40px;
+    text-align: right;
+    font-weight: bold;
 }
-.barra{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 50%;
-    background-color: white;
-    border-radius: 2rem;
+
+/* RESPONSIVIDADE TOTAL */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .funcionario {
+        flex-wrap: nowrap;
+        /* mantém profile-pic à direita */
+    }
+
+    .caminho {
+        height: 160px;
+    }
+
+    .circle {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .circle.inicio,
+    .circle.chegada {
+        font-size: 1.5rem;
+    }
+
+    .principal {
+        max-height: 65vh;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .funcionario {
+        flex-wrap: nowrap;
+    }
+
+    .informacoes h2 {
+        font-size: 1.3rem;
+    }
+
+    .informacoes p {
+        font-size: 1rem;
+    }
+
+    .profile-pic {
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 1.8rem;
+    }
+
+    .caminho {
+        height: 140px;
+    }
+
+    .circle {
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 1.1rem;
+    }
+
+    .circle.inicio,
+    .circle.chegada {
+        font-size: 1.3rem;
+    }
+
+    .principal {
+        max-height: 60vh;
+    }
+
+    .cabeca h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* CELULAR PEQUENO */
+@media (max-width: 480px) {
+    .informacoes h2 {
+        font-size: 1.1rem;
+    }
+
+    .informacoes p {
+        font-size: 0.95rem;
+    }
+
+    .profile-pic {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .caminho {
+        height: 130px;
+    }
+
+    .circle {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+
+    .circle.inicio,
+    .circle.chegada {
+        font-size: 1.1rem;
+    }
+
+    .principal {
+        max-height: 50vh;
+    }
+
+    .cabeca h2 {
+        font-size: 1rem;
+    }
 }

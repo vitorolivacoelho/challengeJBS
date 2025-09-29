@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
         <header>
             <div class="funcionario">
                 <div class="informacoes">
-                    <h2>Nome do Funcionário</h2>
-                    <p>Total de pontos</p>
+                    <h2>Nome do funcionário</h2>
+                    <p>Total de pontos: 350 pontos</p>
                 </div>
                 <div class="foto">
                     <div class="profile-pic">
@@ -24,216 +28,115 @@
                     </div>
                 </div>
             </div>
+
             <div class="caminho">
-                <div class="superior">
-                    <div class="inicio"><img src="/src/assets/img/check.png" alt="" class="check"></div>
-                    <div class="recompensa"><h2>1150</h2></div>
-                    <div class="chegada"><img src="/src/assets/img/trofeu.png" alt="checkpoint" class="trofeu"></div>
+                <svg class="trilha-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30"
+                    preserveAspectRatio="none">
+                    <!-- Linhas conectando os pontos da trilha -->
+                    <line x1="8" y1="12" x2="28" y2="24" stroke="white" stroke-width="0.5" stroke-dasharray="1,1" />
+                    <line x1="28" y1="24" x2="50" y2="12" stroke="white" stroke-width="0.5" stroke-dasharray="1,1" />
+                    <line x1="50" y1="12" x2="72" y2="24" stroke="white" stroke-width="0.5" stroke-dasharray="1,1" />
+                    <line x1="72" y1="24" x2="92" y2="12" stroke="white" stroke-width="0.5" stroke-dasharray="1,1" />
+                </svg>
+
+                <!-- Círculos posicionados com % -->
+                <div class="circle inicio" style="top:40%; left:8%;">
+                    <i class="fa-solid fa-check"></i>
                 </div>
-                <div class="inferior">
-                    <div class="recompensa">
-                        <div class="profile-pic">
-                            <i class="fa-solid fa-user"></i>
-                            <h2>Eu</h2>
-                        </div>
-                    </div>
-                    <div class="recompensa"><h2>1725</h2></div>
+                <div class="circle recompensa" style="top:80%; left:28%;">
+                    <i class="fa-solid fa-user"></i>
+                    <p>EU</p>
+                </div>
+                <div class="circle pontos" style="top:40%; left:50%;">
+                    <p>1150<br>pnts</p>
+                </div>
+                <div class="circle pontos" style="top:80%; left:72%;">
+                    <p>1725<br>pnts</p>
+                </div>
+                <div class="circle chegada" style="top:40%; left:92%;">
+                    <i class="fa-solid fa-trophy"></i>
                 </div>
             </div>
         </header>
+
         <main>
             <div class="cabeca">
-                <div class="text">
-                    <h2>Objetivos e Metas</h2>
+                <h2>Objetivos e Metas</h2>
+                <div class="setas">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
+            <hr class="linha">
+
             <div class="principal">
                 <div class="caixas">
                     <div class="objetivo">
-                        <div class="alvo">
-                            <p>Alvo</p>
-                        </div>
-                        <div class="xp">
-                            <div class="experiencia">
-                                <img src="/src/assets/img/XP.png" alt="">
-                            </div>
-                            <div class="pontos">
-                                <p>xp</p>
-                            </div>
-                        </div>
+                        <p>Venda um total de 500 unidades de frango no mês</p>
+                        <span class="xp">200pts</span>
                     </div>
                     <div class="status">
-                        <div class="contagem">
-                            <div class="barra"></div>
+                        <div class="barra">
+                            <div class="progresso" style="width:100%"></div>
                         </div>
-                        <div class="porcentagem">
-                            <p>0%</p>
-                        </div>
+                        <p>100%</p>
                     </div>
                 </div>
+
                 <div class="caixas">
                     <div class="objetivo">
-                        <div class="alvo">
-                            <p>Alvo</p>
-                        </div>
-                        <div class="xp">
-                            <div class="experiencia">
-                                <img src="/src/assets/img/XP.png" alt="">
-                            </div>
-                            <div class="pontos">
-                                <p>xp</p>
-                            </div>
-                        </div>
+                        <p>Venda um total de 200 pacotes de linguiça no mês</p>
+                        <span class="xp">400pts</span>
                     </div>
                     <div class="status">
-                        <div class="contagem">
-                            <div class="barra"></div>
+                        <div class="barra">
+                            <div class="progresso" style="width:90%"></div>
                         </div>
-                        <div class="porcentagem">
-                            <p>0%</p>
-                        </div>
+                        <p>90%</p>
                     </div>
                 </div>
+
                 <div class="caixas">
                     <div class="objetivo">
-                        <div class="alvo">
-                            <p>Alvo</p>
-                        </div>
-                        <div class="xp">
-                            <div class="experiencia">
-                                <img src="/src/assets/img/XP.png" alt="">
-                            </div>
-                            <div class="pontos">
-                                <p>xp</p>
-                            </div>
-                        </div>
+                        <p>Venda um total de 60 unidades de picanha no mês</p>
+                        <span class="xp">600pts</span>
                     </div>
                     <div class="status">
-                        <div class="contagem">
-                            <div class="barra"></div>
+                        <div class="barra">
+                            <div class="progresso" style="width:20%"></div>
                         </div>
-                        <div class="porcentagem">
-                            <p>0%</p>
-                        </div>
+                        <p>20%</p>
                     </div>
                 </div>
+
                 <div class="caixas">
                     <div class="objetivo">
-                        <div class="alvo">
-                            <p>Alvo</p>
-                        </div>
-                        <div class="xp">
-                            <div class="experiencia">
-                                <img src="/src/assets/img/XP.png" alt="">
-                            </div>
-                            <div class="pontos">
-                                <p>xp</p>
-                            </div>
-                        </div>
+                        <p>Venda um total de 60 unidades de costela no mês</p>
+                        <span class="xp">550pts</span>
                     </div>
                     <div class="status">
-                        <div class="contagem">
-                            <div class="barra"></div>
+                        <div class="barra">
+                            <div class="progresso" style="width:20%"></div>
                         </div>
-                        <div class="porcentagem">
-                            <p>0%</p>
-                        </div>
+                        <p>20%</p>
                     </div>
                 </div>
+
                 <div class="caixas">
                     <div class="objetivo">
-                        <div class="alvo">
-                            <p>Alvo</p>
-                        </div>
-                        <div class="xp">
-                            <div class="experiencia">
-                                <img src="/src/assets/img/XP.png" alt="">
-                            </div>
-                            <div class="pontos">
-                                <p>xp</p>
-                            </div>
-                        </div>
+                        <p>Venda um total de 400 pacotes de pão de alho no mês</p>
+                        <span class="xp">400pts</span>
                     </div>
                     <div class="status">
-                        <div class="contagem">
-                            <div class="barra"></div>
+                        <div class="barra">
+                            <div class="progresso" style="width:50%"></div>
                         </div>
-                        <div class="porcentagem">
-                            <p>0%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="caixas">
-                    <div class="objetivo">
-                        <div class="alvo">
-                            <p>Alvo</p>
-                        </div>
-                        <div class="xp">
-                            <div class="experiencia">
-                                <img src="/src/assets/img/XP.png" alt="">
-                            </div>
-                            <div class="pontos">
-                                <p>xp</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="status">
-                        <div class="contagem">
-                            <div class="barra"></div>
-                        </div>
-                        <div class="porcentagem">
-                            <p>0%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="caixas">
-                    <div class="objetivo">
-                        <div class="alvo">
-                            <p>Alvo</p>
-                        </div>
-                        <div class="xp">
-                            <div class="experiencia">
-                                <img src="/src/assets/img/XP.png" alt="">
-                            </div>
-                            <div class="pontos">
-                                <p>xp</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="status">
-                        <div class="contagem">
-                            <div class="barra"></div>
-                        </div>
-                        <div class="porcentagem">
-                            <p>0%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="caixas">
-                    <div class="objetivo">
-                        <div class="alvo">
-                            <p>Alvo</p>
-                        </div>
-                        <div class="xp">
-                            <div class="experiencia">
-                                <img src="/src/assets/img/XP.png" alt="">
-                            </div>
-                            <div class="pontos">
-                                <p>xp</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="status">
-                        <div class="contagem">
-                            <div class="barra"></div>
-                        </div>
-                        <div class="porcentagem">
-                            <p>0%</p>
-                        </div>
+                        <p>50%</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
 </body>
+
 </html>
