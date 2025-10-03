@@ -115,8 +115,8 @@ body {
     margin-top: auto; 
 }
 
-.btn-sair {
-    background: #b30000 !important;
+.btn-voltar {
+    background: #FF6600 !important;
     color: #fff !important;
     width: 12rem;
     font-size: 1rem;
