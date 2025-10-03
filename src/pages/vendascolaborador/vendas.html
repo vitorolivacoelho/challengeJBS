@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas Colaborador</title>
+    <!-- Chamada Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!-- Chamada CSS -->
+    <link rel="stylesheet" href="vendas.css">
+    <!-- Chamada Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Chamada do BootStrap min.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Botão toggle sidebar para mobile -->
+    <button class="sidebar-toggle d-md-none">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span>Menu</span>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#"><i class="fa-solid fa-gauge"></i><span> Dashboard</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i><span> Colaboradores</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-ranking-star"></i><span> Ranking</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-chart-bar"></i><span> Vendas por Colaborador</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-id-card"></i><span> Perfil Colaborador</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-gear"></i><span> Configurações</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo -->
+    <div class="content">
+        <div class="ranking-box">
+            <h2>Vendas por colaborador</h2>
+            <div class="table-responsive">
+                <table class="table align-middle text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Vendedor</th>
+                            <th scope="col">Faturamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" class="avatar"
+                                    alt="André Luiz"></td>
+                            <td class="fw-bold">André Luiz</td>
+                            <td class="fw-bold text-success">R$2.389.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/2922/2922515.png" class="avatar"
+                                    alt="José Roberto"></td>
+                            <td class="fw-bold">José Roberto</td>
+                            <td class="fw-bold">R$1.779.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/2922/2922513.png" class="avatar"
+                                    alt="Júlio César"></td>
+                            <td class="fw-bold">Júlio César</td>
+                            <td class="fw-bold">R$1.268.000,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="vendas.js"></script>
+
+
+</body>
+
+</html>
