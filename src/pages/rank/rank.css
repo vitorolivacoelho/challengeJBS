@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #f4f5f7;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0.5rem;
+}
+
+/* Logo */
+.logo {
+    max-width: 15.2rem;
+    margin: 0.25rem auto 0.625rem;
+    display: block;
+}
+
+/* Título */
+h2 {
+    font-weight: bold;
+    margin-bottom: 3.75rem;
+    height: 6vh;
+}
+
+/* Container dos ranks */
+.rank-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5625rem;
+}
+
+/* Cartões de rank */
+.rank-card {
+    width: 8.125rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.75rem;
+    position: relative;
+}
+
+/* Ícones */
+.rank-card i {
+    font-size: 1.625rem;
+    margin-bottom: 0.375rem;
+}
+
+.first i {
+    color: #000;
+}
+
+.second i,
+.third i {
+    color: #000;
+}
+
+/* Caixa branca de valores */
+.value-box {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.375rem;
+}
+
+/* Avatar */
+.rank-card img {
+    width: 4.375rem;
+    border-radius: 50%;
+    margin-bottom: 0.375rem;
+}
+
+/* Nome */
+.rank-name {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Barras de ranking */
+.first {
+    background: yellow;
+    height: 20rem;
+}
+
+.second {
+    background: red;
+    height: 15.625rem;
+}
+
+.third {
+    background: red;
+    height: 17.5rem;
+}
+
+/* Responsividade */
+
+/* Tablet 1024px */
+@media (max-width: 64rem) {
+    .rank-card {
+        width: 6.875rem;
+    }
+
+    .rank-card i {
+        font-size: 1.4rem;
+    }
+
+    .first {
+        height: 17.5rem;
+    }
+
+    .second {
+        height: 13.75rem;
+    }
+
+    .third {
+        height: 15.625rem;
+    }
+}
+
+/* mobile 768px */
+@media (max-width: 48rem) {
+    .rank-card {
+        width: 5.9375rem;
+        padding: 0.625rem;
+    }
+
+    .rank-card i {
+        font-size: 1.2rem;
+    }
+
+    .rank-card img {
+        width: 3.75rem;
+    }
+
+    .first {
+        height: 15rem;
+    }
+
+    .second {
+        height: 13.125rem;
+    }
+
+    .third {
+        height: 14.375rem;
+    }
+
+    .value-box {
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile pequeno 480px */
+@media (max-width: 30rem) {
+    .rank-card {
+        width: 5rem;
+        padding: 0.5rem;
+    }
+
+    .rank-card i {
+        font-size: 1rem;
+    }
+
+    .rank-card img {
+        width: 3.4375rem;
+    }
+
+    .first {
+        height: 12.5rem;
+    }
+
+    .second {
+        height: 10.625rem;
+    }
+
+    .third {
+        height: 11.25rem;
+    }
+
+    .value-box {
+        font-size: 0.6875rem;
+        padding: 0.125rem 0.375rem;
+    
+    }
+
+    .rank-name {
+        font-size: 0.75rem;
+
+    }
+
+    .rank-container {
+        gap: 0.5rem;
+    }
+}    
