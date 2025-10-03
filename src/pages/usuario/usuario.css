@@ -2,52 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'DM Sans', Arial, sans-serif; 
 }
 
 html {
-    font-size: 16px; /* Base para REM */
+    width: 100vw;
+    font-size: 16px;
     height: 100%;
 }
 
 body {
     background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+    width: 100vw; 
     min-height: 100vh;
+    display: block; 
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-    width: 90%;              
-    max-width: 46rem;       
+.app-container {
+    width: 100%;
+    max-width: none !important; 
     background: #fff;
-    border-radius: 1rem;
-    margin: 0 auto;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Cabeçalho */
 .header {
     background: #e8470a;
+    width: 100%;
     color: #fff;
     text-align: center;
     padding: 3rem 1rem 2rem;
     position: relative;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-
-.back-arrow {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    font-weight: bold;
+    border-radius: 0;
+    margin-bottom: 0 !important; 
+    padding-bottom: 2rem;
 }
 
 .profile-pic {
@@ -89,135 +80,55 @@ body {
     color: #fff;
 }
 
-/* Informações */
-.info {
-    margin-top: 1rem;
-    flex: 1; 
+
+.accordion {
+    flex-grow: 1; 
+    padding: 0 !important; 
 }
 
-.info-item {
-    border-bottom: 0.0625rem solid #000;
-    padding: 0.75rem 1rem;
+.accordion-item,
+.accordion-header,
+.accordion-button {
+    padding-left: 0.5 !important; 
+    padding-right: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
-.info-item strong {
-    display: block;
-    margin-bottom: 0.25rem;
-    font-size: 1rem;
-    color: #000;
+.accordion-item:first-of-type {
+    border-top: none !important; 
+    box-shadow: none !important;
 }
 
-.info-item p {
-    font-size: 0.875rem;
-    color: #333;
+.accordion-button:focus {
+    box-shadow: none !important; 
 }
 
-/* Botão Sair */
+.accordion-body {
+    padding-left: 1rem !important; 
+    padding-right: 1rem !important;
+}
+
 .footer {
     text-align: center;
     padding: 2rem 1rem;
+    margin-top: auto; 
 }
 
 .btn-sair {
-    background: #b30000;
-    color: #fff;
+    background: #b30000 !important;
+    color: #fff !important;
+    width: 12rem;
     font-size: 1rem;
     font-weight: bold;
     border: none;
     padding: 0.75rem 3.125rem;
     border-radius: 2rem;
     cursor: pointer;
+    display: inline-block !important; 
+    margin: 0;
 }
 
 .btn-sair:hover {
     background: #8b0000;
-}
-
-/* Tablets (até 768px) */
-@media (max-width: 48rem) {
-    .container {
-        width: 95%;
-        max-width: 40rem;
-        max-height: 92vh;
-    }
-
-    .header {
-        padding: 2.5rem 1rem 1.5rem;
-    }
-
-    .profile-pic {
-        width: 6rem;  
-        height: 6rem;
-    }
-
-    .profile-pic i {
-        font-size: 2.5rem;
-    }
-
-    .nome {
-        font-size: 1.125rem;
-    }
-
-    .cargo {
-        font-size: 0.9375rem;
-    }
-
-    .btn-sair {
-        font-size: 0.875rem;
-        padding: 0.625rem 2.5rem;
-    }
-}
-
-/* Smartphones (até 480px) */
-@media (max-width: 30rem) {
-    .container {
-        width: 100%;
-        border-radius: 0;   
-        max-height: 100vh;
-    }
-
-    .header {
-        padding: 2rem 1rem 1rem;
-        border-radius: 0;
-    }
-
-    .back-arrow {
-        font-size: 1.25rem;
-        top: 0.75rem;
-        left: 0.75rem;
-    }
-
-    .profile-pic {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .profile-pic i {
-        font-size: 2rem;
-    }
-
-    .nome {
-        font-size: 1rem;
-    }
-
-    .cargo {
-        font-size: 0.875rem;
-    }
-
-    .info-item strong {
-        font-size: 0.9375rem;
-    }
-
-    .info-item p {
-        font-size: 0.8125rem;
-    }
-
-    .footer {
-        padding: 1.5rem 1rem;
-    }
-
-    .btn-sair {
-        font-size: 0.875rem;
-        padding: 0.625rem 2rem;
-    }
 }
