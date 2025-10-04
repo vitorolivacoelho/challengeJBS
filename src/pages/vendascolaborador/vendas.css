@@ -119,29 +119,16 @@ h2 {
     padding: 0.6rem 0.8rem;
     border-radius: 0.5rem;
     transition: background 0.3s;
+    justify-content: flex-start; /* ícone à esquerda, texto à direita */
 }
 
 .sidebar-menu a i {
-    margin-right: 0.6rem;
+    margin-right: 0.8rem;
     font-size: 1.1rem;
 }
 
 .sidebar-menu a:hover {
     background: rgba(255, 255, 255, 0.15);
-}
-
-/* Sidebar collapsed */
-.sidebar.collapsed {
-    width: 4rem;
-}
-
-.sidebar.collapsed .sidebar-header span,
-.sidebar.collapsed .sidebar-menu a span {
-    display: none;
-}
-
-.sidebar.collapsed .sidebar-menu a {
-    justify-content: center;
 }
 
 /* Conteúdo principal */
@@ -150,6 +137,28 @@ h2 {
     padding: 2rem;
     flex: 1;
     transition: margin-left 0.3s ease;
+}
+
+/* Toggle button */
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1001;
+    font-size: 1.5rem;
+    background: #fff; /* fundo inicial */
+    color: #000; /* ícone preto */
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem; /* retangular, sem círculo */
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Toggle quando sidebar aberta */
+.sidebar-toggle.open {
+    background: #ff6b00;
+    color: #fff;
 }
 
 /* Responsividade */
@@ -232,6 +241,12 @@ h2 {
         cursor: pointer;
         color: #000;
     }
+
+    .sidebar-toggle.open {
+        background: #ff6b00;
+        color: #fff;
+    }
+
 
     h2 {
         font-size: 1.2rem;

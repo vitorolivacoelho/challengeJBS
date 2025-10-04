@@ -10,7 +10,7 @@ body {
     display: flex;
     background-color: #f4f6f9;
     min-height: 100vh;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .sidebar {
@@ -79,14 +79,23 @@ body {
     left: 1rem;
     z-index: 1001;
     font-size: 1.5rem;
-    background: #ff6b00;
-    color: #fff;
+    background: #fff;
+    /* fundo inicial branco */
+    color: #000;
+    /* ícone preto quando fechado */
     border: none;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Fundo do toggle quando sidebar aberta */
+.sidebar-toggle.open {
+    background: #ff6b00;
+    color: #fff;
 }
 
 .content {
@@ -118,21 +127,21 @@ body {
     color: #fff;
 }
 
-.card:first-child{
-    background-color:#2962ff;
-}
-.card:nth-child(2){
-    background-color:#ff9100;
+.card:first-child {
+    background-color: #2962ff;
 }
 
-.card:nth-child(3){
-    background-color:#0ea300;
+.card:nth-child(2) {
+    background-color: #ff9100;
 }
 
-.card:nth-child(4){
-    background-color:#ff0000;
+.card:nth-child(3) {
+    background-color: #0ea300;
 }
 
+.card:nth-child(4) {
+    background-color: #ff0000;
+}
 
 .interno-card {
     display: flex;
@@ -162,7 +171,7 @@ body {
     padding: 20px;
     margin-top: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: 400px;
 }
 
@@ -171,6 +180,7 @@ body {
     height: 100% !important;
 }
 
+/* Responsividade */
 @media (max-width: 1024px) {
     .sidebar {
         width: 14rem;
@@ -178,20 +188,25 @@ body {
         padding: 1rem;
         transition: transform 0.3s ease;
     }
-    
+
     .sidebar-toggle {
         display: block !important;
     }
-    
+
     .content {
         margin-left: 0;
         padding: 1rem;
         padding-top: 50px;
     }
-    
+
     .cards-main {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+
+    /* Esconder o "Menu" dentro da sidebar-header em telas menores */
+    .sidebar-header span {
+        display: none;
     }
 }
 
@@ -200,22 +215,25 @@ body {
         width: 80%;
         max-width: 14rem;
     }
-    
+
     .cards-main {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    
+
     .titulo-main h2 {
         font-size: 1.5rem;
     }
+
     .grafico-container {
         height: 350px;
         padding: 15px;
     }
+
     .card h1 {
         font-size: 2rem;
     }
+
     .interno-card .material-symbols-outlined {
         font-size: 40px;
     }
