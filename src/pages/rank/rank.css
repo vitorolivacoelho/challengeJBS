@@ -12,7 +12,7 @@ body {
     height: 100%;
     background-color: #f4f5f7;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -32,7 +32,6 @@ body {
     transition: transform 0.3s ease;
     z-index: 200;
     transform: translateX(0);
-    /* desktop: sempre aberta */
 }
 
 .sidebar-header {
@@ -87,28 +86,26 @@ body {
     margin-left: 16rem;
     padding: 2rem;
     flex: 1;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* centraliza verticalmente todo o container */
     align-items: center;
-}
-
-/* LOGO */
-.logo {
-    max-width: 15rem;
-    margin: 0.5rem auto 1rem;
-    display: block;
+    min-height: 100vh;
+    text-align: center;
 }
 
 /* TÍTULO */
 h2 {
     font-weight: bold;
-    margin-bottom: 3rem;
     font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
+    /* sobe o título sem desalinhar os ranks */
     text-align: center;
 }
 
-/* RANK CONTAINER */
+/* CONTAINER DOS RANKS */
 .rank-container {
     display: flex;
     justify-content: center;
@@ -184,25 +181,20 @@ h2 {
     left: 1rem;
     border: none;
     color: #000;
-    /* ícone preto quando sidebar fechada */
     font-size: 1.5rem;
     padding: 0.5rem 0.75rem;
     border-radius: 0.5rem;
     cursor: pointer;
     z-index: 300;
     background-color: #f4f5f7;
-    /* fundo igual ao da página */
     transition: background 0.3s, color 0.3s;
 }
 
 .sidebar-toggle.open {
     background-color: #ff6b00;
-    /* fundo igual à sidebar */
     color: #fff;
-    /* ícone branco */
 }
 
-/* Foco e ativo */
 .sidebar-toggle:focus,
 .sidebar-toggle:active {
     outline: none;
